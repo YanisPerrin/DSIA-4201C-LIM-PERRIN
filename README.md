@@ -60,17 +60,13 @@ Ce *README* est composé de trois principales parties :
 
 Pour pouvoir accéder à notre projet, il faut pouvoir cloner l'original accessible depuis git.
 
-Lancer un terminal (linux) ou gitbash (windows).
+Lancer un terminal gitbash (windows) dans le répertoite où vous allez stocker le projet.
 
 Ecrire les instructions suivantes:
 
-> cd Documents
+> git config --global core.autocrlf false
 
-> mkdir projet_perrin_lim
-
-> cd projet_perrin_lim
-
-> git clone https://git.esiee.fr/perriny/dsia-4201c-lim-perrin.git
+> git clone https://github.com/YanisPerrin/DSIA-4201C-LIM-PERRIN.git
 
 ### Déployer le projet
 
@@ -84,7 +80,7 @@ Suivre les instructions suivantes :
 
 > Dans le terminal, exécuter la commande "docker compose up".
 
-> Une fois la commande lancée, se rendre dans la liste des conteneurs de Docker Desktop et lancer le lien au port "8501:8501" de l'image "streamlit-1" du conteneur "projet_lim_perrin".
+> Une fois la commande lancée, se rendre dans la liste des conteneurs de Docker Desktop et lancer le lien au port "8501:8501" de l'image "streamlit-1" du conteneur "dsia-4201c_lim_perrin".
 
 Vous pouvez désormais visualiser et interargir avec notre application.
 

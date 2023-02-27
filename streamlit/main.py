@@ -372,7 +372,7 @@ st.header("Compare players general stats with others")
 all_players=collection.distinct('Name')
 selected_player=st.multiselect('Select Player(s)', all_players)
 
-general_stats_categories=['Name','Value in game','General Note','General Pace','General Shooting','General Passing','General Dribbling','General Defending', 'General Physical','Weak Foot (/5)','Skills (/5)']
+general_stats_categories=['Name','General Note','General Pace','General Shooting','General Passing','General Dribbling','General Defending', 'General Physical','Weak Foot (/5)','Skills (/5)','Value in game']
 
 #requête sur la base de données mongo, qui retourne les données pour les notes générales de chaque stat en fonction du/des joueur(s) recherché(s)
 cur_general_stats = collection.find({"Name":{"$in":selected_player}}, {k:1 for k in general_stats_categories} | {"_id":0})
