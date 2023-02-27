@@ -1,0 +1,13 @@
+#création des images
+services:
+  mongo:
+    image: mongo
+    restart: always
+    ports:
+      - "27017:27017"
+
+  streamlit:
+    build:
+      context: ./streamlit
+    ports:
+     - "8501:8501"
